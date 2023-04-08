@@ -1,0 +1,18 @@
+.navbar-collapse {
+  flex-grow: inherit;
+}
+
+.navbar {
+  background-color: #FF6666 !important;
+  color: #FFFFFF !important;
+}
+
+.navbar-brand {
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.table-tr-custom{
+  border-bottom-color: black;
+  border-bottom-width: 2px !important;
+}
