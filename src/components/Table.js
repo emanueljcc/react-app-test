@@ -33,7 +33,7 @@ const Table = () => {
         </tr>
       </thead>
       <tbody>
-        {data.data.length && data?.data.map(res => (
+        {data?.data.length && data?.data.map(res => (
           res?.lines.map((el, i) => (
             <tr key={i}>
               <td>{res.file}</td>

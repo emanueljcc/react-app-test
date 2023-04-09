@@ -1,4 +1,5 @@
 import { isRejectedWithValue } from '@reduxjs/toolkit'
+import { toast } from 'react-toastify'
 
 /**
  * "If the action is rejected, log the action to the console."
@@ -9,6 +10,11 @@ import { isRejectedWithValue } from '@reduxjs/toolkit'
  */
 export const rtkQueryErrorLogger = () => next => action => {
   if (isRejectedWithValue(action)) {
+    const customId = 'custom-id-yes'
+
+		toast.error(action.payload.error, {
+			toastId: customId,
+		})
     console.log(action)
   }
 
